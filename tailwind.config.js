@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html'],
-  theme: {
-    extend: {},
-  },
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          offWhite: '#fafafa',
+        },
+        fontFamily: {
+          inter: ['Inter'],
+        },
+      },
+    },
   plugins: [],
 }
 
