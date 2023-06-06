@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <title>Sign in | Vogue</title>
+    <link rel="icon" type="image/x-icon" href="./assets/vogue-icon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./dist/style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="">
+    <main class="h-screen">
+      <div class="flex flex-col lg:flex-row pb-14 lg:p-0 overflow-x-hidden min-h-screen">
+        <div class="hidden lg:block fixed text-6xl top-5 right-5 bg-lime-50">
+          <div class="flex justify-center">
+            <input type="checkbox" id="toggle" class="hidden"/>
+            <label for="toggle">
+              <div class="w-11 h-6 bg-black rounded-full flex items-center p-1 cursor-pointer">
+                <div class="toggle-circle w-4 h-4 bg-white rounded-full transition duration-300 ease-in-out"></div> <!-- toggle circle here is a custom class/not exist in tailwind -->
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="relative w-full lg:w-6/12 flex flex-col py-12 items-center justify-center bg-cover bg-no-repeat bg-center" style="background-image: url('./assets/cover-bg.webp');">
+          <div class="lg:absolute -top-5">
+            <img src="assets/vogue-logo.svg" alt="vogue-logo" class="">
+          </div>
+          <div class="hidden lg:block absolute bottom-5 left-5">
+            <p class="font-medium">“ANYTIME YOU’RE<br>PUTTING BARRIERS<br>UP IN YOUR LIFE, YOU’RE<br>LIMITING YOURSELF”</p>
+          </div>
+        </div>
+
+        <div class="lg:grid place-items-center">
+          <div class="w-5/6">
+            <div class="w-full pt-14 pb-8 px-10 lg:pb-14">
+              <h1 class="text-6xl mb-4 font-semibold">Unlock Vogue's Style</h1>
+              <p class="mb-4 font-light">
+                Join Vogue, unlock style inspiration, and connect with a vibrant fashion community. Create your account today and embark on a stylish journey with us.
+              </p>
+            </div>
+
+            <form action="#" method="get" class="w-full px-10">
+              <div class="grid grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                  <label for="f_name" class="mb-1 text-sm">First name</label>
+                  <input type="text" id="f_name" class="w-full border border-black rounded-md py-1"/>
+                </div>
+                <div class="flex flex-col">
+                  <label for="l_name" class="mb-1 text-sm">Last name</label>
+                  <input type="text" id="l_name" class="w-full border border-black rounded-md py-1"/>
+                </div>
+              </div>
+              <div class="flex flex-col mt-5">
+                <label for="email" class="mb-1 text-sm">Email</label>
+                <input type="email" id="email" class="w-full border border-black rounded-md py-1">
+              </div>
+              <div class="flex flex-col mt-5">
+                <label for="password" class="mb-1 text-sm">Password</label>
+                <input type="password" id="password" class="w-full border border-black rounded-md py-1">
+              </div>
+              <div class="mt-5">
+                <button class="w-full bg-black py-3 text-center text-white rounded-md">Sign in</button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </main>
+  </body>
+</html>
